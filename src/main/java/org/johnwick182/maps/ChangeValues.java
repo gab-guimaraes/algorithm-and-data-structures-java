@@ -1,15 +1,16 @@
 package org.johnwick182.maps;
 
-import java.util.HashMap;
+import static org.johnwick182.maps.WorldCupCountries.countriesWorldCup;
 
 public class ChangeValues {
     public static void main(String[] args) {
-        HashMap<String, Integer> countriesWorldCup = new HashMap<>();
+
         countriesWorldCup.put("Brazil", 5);
         countriesWorldCup.put("Australia", 0);
         countriesWorldCup.put("Italia", 4);
         countriesWorldCup.put("Spain", 2);
         countriesWorldCup.put("Japan", 0);
+
 
         //suppose we'd like to increase some numbers.
         System.out.println(countriesWorldCup.get("Brazil"));
@@ -32,7 +33,6 @@ public class ChangeValues {
         //apply some changes in all hashmap
         countriesWorldCup.replaceAll((produto, quantidade) -> quantidade * 2);
         System.out.println(countriesWorldCup.get("Mexico"));
-
 
     }
 }
